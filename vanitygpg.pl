@@ -12,14 +12,14 @@ use POSIX;
 my ($thread_count, $stop, @threads, $started_at, @needles);
 
 $stop = 0;
-$thread_count=48;
+$thread_count=8;
 $started_at = gettimeofday();
 
 my ($key_len, $key_name, $key_pass, $key_email, @status, $keycount, $matchstring) :shared;
 
 $key_len=8192;
 $key_name='Arthur Jovart';
-$key_pass='';
+$key_pass='arthur';
 $key_email='arthur@jovart.com';
 $keycount=0;
 
