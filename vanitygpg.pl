@@ -17,18 +17,18 @@ $started_at = gettimeofday();
 
 my ($key_len, $key_name, $key_pass, $key_email, @status, $keycount, $matchstring) :shared;
 
-$key_len=2048;
-$key_name='user';
-$key_pass='pass';
-$key_email='mail@domain.tld';
+$key_len=8192;
+$key_name='Arthur Jovart';
+$key_pass='';
+$key_email='arthur@jovart.com';
 $keycount=0;
 
 
 #add your desired key matches in this array, they will all be applied to each key, when a matching key for ANY is found, hashing will stop.
 
-@needles = (    '.*?(.)(?:(.*?\1.*?){6,})',
-                '^B17CE0',
-                '^6666'
+@needles = (    '^([0-E])\1{11}',
+                '^000011112222',
+		'CAFECAFECAFECAFE',
                 );
 				
 				
