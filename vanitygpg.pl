@@ -83,7 +83,7 @@ sub keyThread{
     @status[$number]='running';
 
     # Generate a key
-    my $quiet = `bash keybatchgen.sh $number $key_len $key_name $key_pass $key_email 2>&1`;
+    my $quiet = `bash keybatchgen.sh "$number" "$key_len" "$key_name" "$key_pass" "$key_email" 2>&1`;
 
     $keycount++;
 
